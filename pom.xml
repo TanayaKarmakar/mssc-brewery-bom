@@ -172,6 +172,12 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <layers>
+                        <enabled>true</enabled>
+                        <includeLayerTools>true</includeLayerTools>
+                    </layers>
+                </configuration>
             </plugin>
             <plugin>
                 <artifactId>maven-clean-plugin</artifactId>
@@ -224,7 +230,7 @@
                             <alias>${project.artifactId}</alias>
                             <build>
                                 <assembly>
-                                    <descriptionRef>artifact</descriptionRef>
+                                    <descriptorRef>artifact</descriptorRef>
                                 </assembly>
                                 <dockerFile>Dockerfile</dockerFile>
                                 <tags>
