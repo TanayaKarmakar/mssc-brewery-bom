@@ -27,7 +27,7 @@
         <mapstruct.version>1.4.1.Final</mapstruct.version>
         <awaitility.version>3.1.6</awaitility.version>
         <spring-cloud.version>Hoxton.SR8</spring-cloud.version>
-        <docker.image.prefix>mssc-beer</docker.image.prefix>
+        <docker.image.prefix>tanayak</docker.image.prefix>
         <docker.image.name>${project.artifactId}</docker.image.name>
     </properties>
 
